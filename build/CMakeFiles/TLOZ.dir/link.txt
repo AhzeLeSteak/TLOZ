@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/TLOZ.dir/src/SpriteManager.cpp.o CMakeFiles/TLOZ.dir/src/Player.cpp.o CMakeFiles/TLOZ.dir/src/Item.cpp.o CMakeFiles/TLOZ.dir/src/main.cpp.o  -o TLOZ /usr/lib/x86_64-linux-gnu/libsfml-graphics.so /usr/lib/x86_64-linux-gnu/libsfml-window.so /usr/lib/x86_64-linux-gnu/libsfml-system.so 
