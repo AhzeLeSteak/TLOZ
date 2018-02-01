@@ -8,7 +8,7 @@ Item::Item(std::string nName)
 	load_texture(name);
 }
 
-void Item::display(sf::RenderWindow& window, int& x, int& y){
+void Item::display(sf::RenderWindow* window, int& x, int& y){
 	spriteM->display(window, x, y);
 }
 

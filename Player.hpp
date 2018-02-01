@@ -21,9 +21,10 @@ private:
 public:
 	Player(std::string nNom);
 	~Player();
-	void display(sf::RenderWindow& w);
+	void display(sf::RenderWindow* w);
 	void load_texture(std::string& s);
 	void update_texture();
+	void move(Direction dir);
 };
 
 #endif

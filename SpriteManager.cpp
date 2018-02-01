@@ -37,9 +37,9 @@ SpriteManager::SpriteManager(const std::string& s): spritename(s), actualSpriteC
 	
 }
 
-void SpriteManager::display(sf::RenderWindow& window, int& x, int& y){
+void SpriteManager::display(sf::RenderWindow* window, int& x, int& y){
 	sprite.setPosition(sf::Vector2f(x, y));
-	window.draw(sprite);
+	window->draw(sprite);
 }
 
 

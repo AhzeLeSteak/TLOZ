@@ -21,7 +21,7 @@ private:
 public:
 	SpriteManager(const std::string& s);
 	~SpriteManager();
-	void display(sf::RenderWindow& window, int& x, int& y);
+	void display(sf::RenderWindow* window, int& x, int& y);
 	void update_texture(int actualState, int dir);
 	void update_texture(int actualState);
 	static void loadAllTextures();

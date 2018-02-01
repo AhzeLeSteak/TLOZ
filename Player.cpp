@@ -18,7 +18,7 @@ Player::Player(std::string nName)
 	load_texture(name);
 }
 
-void Player::display(sf::RenderWindow& w){
+void Player::display(sf::RenderWindow* w){
 	spriteM->display(w, x, y);
 }
 
