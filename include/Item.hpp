@@ -1,5 +1,7 @@
+#pragma once
+
 #include <SFML/Graphics.hpp>
-#include <SpriteManager.hpp>
+#include "SpriteManager.hpp"
 
 class Item{
 private:
@@ -7,12 +9,13 @@ private:
 	bool obtained;
 	int dmg;
 	SpriteManager *spriteM;
+	StateItem actualState;
 
 public:
 	Item(std::string nName);
 	~Item();
-	void display_use(sf::RenderWindow window);
-	void display_inventory(sf::RenderWindow window);
 	void load_texture(std::string& s);
+	void display(sf::RenderWindow* window);
+	void update_texture();
 	void use();
-};
+};	

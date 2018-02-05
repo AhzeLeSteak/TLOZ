@@ -1,18 +1,15 @@
-#include <SFML/Graphics.hpp>
-#include <enums.hpp>
+#pragma once
 
-#ifndef SMHPP
-#define SMHPP
+#include <SFML/Graphics.hpp>
+#include "enums.hpp"
 
 class SpriteManager
 {
 private:
-	int h;
-	int w;
-	int nbSpriteMax[];
+	int x, y, w, h; 
+	std::vector<int> nbSpriteMax;
 	int actualSpriteCounter;
 	StateEntity actualState;
-	StateEntity oldState;
 	std::string spritename;
 	sf::Sprite sprite;
 	
@@ -22,11 +19,11 @@ private:
 public:
 	SpriteManager(const std::string& s);
 	~SpriteManager();
-	void display(sf::RenderWindow& window, int& x, int& y);
-	//template<typename en> 
-	void update_texture(int actualState, int oldState, int dir);
+	void draw(sf::RenderWindow* window) const ;
+	void move(int dx, int dy);
+	void set_position(int& new_x, int& new_y);
+	void update_texture(int actualState, int dir);
+	void update_texture(int actualState);
 	static void loadAllTextures();
 	
 };
-
-#endif	

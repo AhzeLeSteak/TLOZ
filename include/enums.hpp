@@ -1,5 +1,4 @@
-#ifndef ENUMS
-#define ENUMS
+#pragma once
 
 enum Direction{
 	up,
@@ -15,12 +14,11 @@ enum StateEntity{
 	walking,
 	taking_damage,
 	hitting,
-	rolling
+	rolling,
+	NB_OF_STATE
 };
 
 enum StateItem{
 	charging,
 	used
 };
-
-#endif

@@ -1,5 +1,4 @@
-#ifndef UTILS
-#define UTILS
+#pragma once
 	
 #include <iostream>
 #include <sstream>
@@ -20,5 +19,3 @@ T str_to(const std::string& v)
     b >> t;
     return t;
 }
-
-#endif
